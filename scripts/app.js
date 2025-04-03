@@ -27,7 +27,6 @@ const app = Vue.createApp({
             {
                 return 1
             }
-            //return this.pressureMonitorValue >= pressureLevel.min && this.pressureMonitorValue <= pressureLevel.max;
         }
     }
 });
