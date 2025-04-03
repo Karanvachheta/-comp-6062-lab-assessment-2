@@ -12,7 +12,7 @@
             <h1>Pressure Monitor Interface - {{myFullName}}</h1>
         </header>
         <main>
-            <p> <strong>Current Pressure: {{ pressureMonitorValue }} </strong> </p>
+            <p> Current Pressure: <strong> {{ pressureMonitorValue }} </strong> </p>
             <input type="range" min="0" max="100" v-model="pressureMonitorValue ">
             <div v-for="pressureLevel in pressureMonitorLevels" :key="pressureLevel.id" :class="['indicator', pressureLevel.color,
                 { 'inactive': !isActive(pressureLevel) }]">{{ pressureLevel.label}}
